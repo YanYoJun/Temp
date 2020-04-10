@@ -199,33 +199,33 @@ public class ToolsMainActivity extends Activity implements OnClickListener,
 	public void initLinearLayout() {
 		// 主界面六个子功能
 		jz_ll = (LinearLayout) this.findViewById(R.id.main_ll_1);
-		jz_ll.setBackgroundDrawable(getResources().getDrawable(
-				R.drawable.icon_selector));
+//		jz_ll.setBackgroundDrawable(getResources().getDrawable(
+//				R.drawable.icon_selector));
 		jz_ll.setOnClickListener(this);
 		jz_ll.setOnLongClickListener(this);
 		bw_ll = (LinearLayout) this.findViewById(R.id.main_ll_2);
-		bw_ll.setBackgroundDrawable(getResources().getDrawable(
-				R.drawable.icon_selector));
+//		bw_ll.setBackgroundDrawable(getResources().getDrawable(
+//				R.drawable.icon_selector));
 		bw_ll.setOnClickListener(this);
 		bw_ll.setOnLongClickListener(this);
 		js_ll = (LinearLayout) this.findViewById(R.id.main_ll_3);
-		js_ll.setBackgroundDrawable(getResources().getDrawable(
-				R.drawable.icon_selector));
+//		js_ll.setBackgroundDrawable(getResources().getDrawable(
+//				R.drawable.icon_selector));
 		js_ll.setOnClickListener(this);
 		js_ll.setOnLongClickListener(this);
 		tq_ll = (LinearLayout) this.findViewById(R.id.main_ll_4);
-		tq_ll.setBackgroundDrawable(getResources().getDrawable(
-				R.drawable.icon_selector));
+//		tq_ll.setBackgroundDrawable(getResources().getDrawable(
+//				R.drawable.icon_selector));
 		tq_ll.setOnClickListener(this);
 		tq_ll.setOnLongClickListener(this);
 		wz_ll = (LinearLayout) this.findViewById(R.id.main_ll_5);
-		wz_ll.setBackgroundDrawable(getResources().getDrawable(
-				R.drawable.icon_selector));
+//		wz_ll.setBackgroundDrawable(getResources().getDrawable(
+//				R.drawable.icon_selector));
 		wz_ll.setOnClickListener(this);
 		wz_ll.setOnLongClickListener(this);
 		fy_ll = (LinearLayout) this.findViewById(R.id.main_ll_6);
-		fy_ll.setBackgroundDrawable(getResources().getDrawable(
-				R.drawable.icon_selector));
+//		fy_ll.setBackgroundDrawable(getResources().getDrawable(
+//				R.drawable.icon_selector));
 		fy_ll.setOnClickListener(this);
 		fy_ll.setOnLongClickListener(this);
 		info_ll = (LinearLayout) this.findViewById(R.id.main_infolayout);

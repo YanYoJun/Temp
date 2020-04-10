@@ -3,18 +3,17 @@
     android:id="@+id/main_frame"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/bg_2" >
+    android:background="@color/white">
 
     <LinearLayout
         android:id="@+id/main_top_bt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="25dp"
-        android:layout_marginTop="25dp"
         android:background="@drawable/main_top_btr"
-        android:orientation="vertical" >
-    </LinearLayout>
+        android:orientation="vertical"/>
 
     <LinearLayout
         android:id="@+id/main_infolayout"
@@ -24,15 +23,15 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/main_info_bg"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/maintext_cpu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
             android:textColor="#ffffff"
             android:textSize="15dp" />
 
@@ -50,8 +49,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
             android:textColor="#ffffff"
             android:textSize="15dp" />
 
@@ -60,8 +59,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
             android:textColor="#ffffff"
             android:textSize="15dp" />
 
@@ -70,8 +69,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
             android:textColor="#ffffff"
             android:textSize="15dp" />
 
@@ -80,8 +79,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
             android:textColor="#ffffff"
             android:textSize="15dp" />
 
@@ -90,8 +89,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
             android:textColor="#ffffff"
             android:textSize="15dp" />
 
@@ -100,8 +99,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
             android:textColor="#ffffff"
             android:textSize="15dp" />
 
@@ -109,35 +108,42 @@
             android:id="@+id/maintext_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
             android:textColor="#ffffff"
             android:textSize="15dp" />
     </LinearLayout>
 
+
     <LinearLayout
         android:id="@+id/main_iconlayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical" >
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <LinearLayout
                 android:id="@+id/main_ll_1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="15dp"
-                android:background="@drawable/icon_bg"
-                android:gravity="center_horizontal"
-                android:orientation="vertical" >
+                android:layout_weight="1"
+                android:background="@drawable/bg_onclick"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/main_iv_1"
@@ -153,21 +159,26 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="@string/main_jizhangqi"
-                    android:textColor="#ffffff" />
+                    android:textColor="#313131" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
 
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
             <LinearLayout
                 android:id="@+id/main_ll_2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
-                android:background="@drawable/icon_bg"
-                android:gravity="center_horizontal"
-                android:orientation="vertical" >
+                android:layout_weight="1"
+                android:background="@drawable/bg_onclick"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/main_iv_2"
@@ -183,7 +194,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="@string/main_benwang"
-                    android:textColor="#ffffff" />
+                    android:textColor="#313131" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -191,19 +202,24 @@
             </LinearLayout>
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray" />
+
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp" >
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <LinearLayout
                 android:id="@+id/main_ll_3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="15dp"
-                android:background="@drawable/icon_bg"
-                android:gravity="center_horizontal"
-                android:orientation="vertical" >
+                android:layout_weight="1"
+                android:background="@drawable/bg_onclick"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/main_iv_3"
@@ -219,21 +235,26 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="@string/main_jisuan"
-                    android:textColor="#ffffff" />
+                    android:textColor="#313131" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
 
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
             <LinearLayout
                 android:id="@+id/main_ll_4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
-                android:background="@drawable/icon_bg"
-                android:gravity="center_horizontal"
-                android:orientation="vertical" >
+                android:layout_weight="1"
+                android:background="@drawable/bg_onclick"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/main_iv_4"
@@ -249,7 +270,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="@string/main_tianqi"
-                    android:textColor="#ffffff" />
+                    android:textColor="#313131" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -257,19 +278,24 @@
             </LinearLayout>
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray" />
+
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp" >
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <LinearLayout
                 android:id="@+id/main_ll_5"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="15dp"
-                android:background="@drawable/icon_bg"
-                android:gravity="center_horizontal"
-                android:orientation="vertical" >
+                android:layout_weight="1"
+                android:background="@drawable/bg_onclick"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/main_iv_5"
@@ -285,21 +311,26 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="@string/main_location"
-                    android:textColor="#ffffff" />
+                    android:textColor="#313131" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
 
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
             <LinearLayout
                 android:id="@+id/main_ll_6"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
-                android:background="@drawable/icon_bg"
-                android:gravity="center_horizontal"
-                android:orientation="vertical" >
+                android:layout_weight="1"
+                android:background="@drawable/bg_onclick"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/main_iv_6"
@@ -315,14 +346,20 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="@string/fanyi"
-                    android:textColor="#ffffff" />
+                    android:textColor="#313131" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray" />
     </LinearLayout>
+
 
     <SlidingDrawer
         android:id="@+id/main_slidingDrawer"
@@ -330,7 +367,7 @@
         android:layout_height="250dp"
         android:layout_gravity="bottom"
         android:content="@+id/content"
-        android:handle="@+id/handle" >
+        android:handle="@+id/handle">
 
         <Button
             android:id="@+id/handle"
@@ -343,15 +380,15 @@
             android:layout_width="292dp"
             android:layout_height="106dp"
             android:background="@drawable/main_menu"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/main_help_bt"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/mian_menu_bt_selector"
                 android:text="@string/main_help"
                 android:textColor="#ffffff" />
@@ -361,8 +398,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/mian_menu_bt_selector"
                 android:text="@string/main_hiddenguanggao"
                 android:textColor="#ffffff" />
@@ -372,8 +409,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/mian_menu_bt_selector"
                 android:text="@string/main_bt_about"
                 android:textColor="#ffffff" />
@@ -383,8 +420,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/mian_menu_bt_selector"
                 android:text="@string/main_bt_exit"
                 android:textColor="#ffffff" />

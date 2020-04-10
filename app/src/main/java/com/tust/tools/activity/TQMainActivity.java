@@ -210,15 +210,15 @@ public class TQMainActivity extends Activity implements OnClickListener{
         pd = ProgressDialog.show(this, "", "正在搜索"+info+"，请稍后...", true, true);
     }
     
-    public boolean onKeyDown(int kCode, KeyEvent kEvent) {
-        switch (kCode) {
-        case KeyEvent.KEYCODE_BACK: {
-                exitDialog();
-            return false;
-        }
-        }
-        return super.onKeyDown(kCode, kEvent);
-    }
+//    public boolean onKeyDown(int kCode, KeyEvent kEvent) {
+//        switch (kCode) {
+//        case KeyEvent.KEYCODE_BACK: {
+//                exitDialog();
+//            return false;
+//        }
+//        }
+//        return super.onKeyDown(kCode, kEvent);
+//    }
 
     /*
      * 退出弹出框

@@ -91,7 +91,7 @@
     <string name="tq_qiehuan">切换城市</string>
     <string name="tq_dangqian">当前天气</string>
     <string name="tq_gengxintime">数据更新时间:</string>
-    <string name="fy_hint">请输入内容，单词、短语、\r\n长句（中英皆可）。</string>
+    <string name="fy_hint">请输入内容，单词、短语、长句（中英皆可）。</string>
     <string name="fy_fanyi">翻译</string>
     <string name="fy_huyi">翻译</string>
     <string name="fanyi">翻译</string>

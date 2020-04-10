@@ -381,7 +381,7 @@ public class ToolsMainActivity extends Activity implements OnClickListener,
 					Intent intent = new Intent(ToolsMainActivity.this, c);
 					intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
 					ToolsMainActivity.this.startActivity(intent);
-					ToolsMainActivity.this.finish();
+//					ToolsMainActivity.this.finish();
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

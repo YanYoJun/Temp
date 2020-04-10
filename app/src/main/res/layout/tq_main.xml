@@ -2,10 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_4"
+    android:background="#ffffff"
     android:gravity="bottom"
-    android:orientation="vertical" >
-
+    android:orientation="vertical">
+
+
     <com.tust.tools.service.Marrquee
         android:id="@+id/tq_gg_text"
         android:layout_width="fill_parent"
@@ -24,39 +25,45 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal" >
+        android:gravity="center_horizontal">
 
         <EditText
             android:id="@+id/tq_chengshi_et"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
             android:layout_marginTop="5dp"
+            android:layout_marginRight="25dp"
             android:background="@drawable/bw_new_et_bg_1"
             android:hint="@string/tq_chengshi"
-            android:visibility="visible" >
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:visibility="visible">
 
             <requestFocus />
         </EditText>
 
         <ImageButton
             android:id="@+id/tq_mian_serch_ib"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentTop="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_alignRight="@+id/tq_chengshi_et"
-            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
             android:background="@drawable/find"
             android:contentDescription="@string/app_name" />
     </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/tq_ll"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/tianqi_main_bg"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/tq_dangqian_ll"
@@ -64,13 +71,13 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginTop="20dp" >
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/tq_dangqian_city_txt"
@@ -102,9 +109,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
-                android:layout_marginBottom="3dp"
                 android:layout_marginLeft="25dp"
-                android:orientation="vertical" >
+                android:layout_marginBottom="3dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/tq_dangqian_condition_text"
@@ -137,19 +144,18 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <ListView
                 android:id="@+id/tq_list"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="30dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginTop="10dp"
-                android:divider="@null"
-                android:cacheColorHint="#00000000" >
-            </ListView>
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="30dp"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"></ListView>
         </LinearLayout>
     </LinearLayout>
 

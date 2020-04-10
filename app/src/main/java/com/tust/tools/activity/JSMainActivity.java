@@ -183,15 +183,15 @@ public class JSMainActivity extends Activity implements OnClickListener{
         }
     }
     
-    public boolean onKeyDown(int kCode, KeyEvent kEvent) {
-        switch (kCode) {
-        case KeyEvent.KEYCODE_BACK: {
-                exitDialog();
-            return false;
-        }
-        }
-        return super.onKeyDown(kCode, kEvent);
-    }
+//    public boolean onKeyDown(int kCode, KeyEvent kEvent) {
+//        switch (kCode) {
+//        case KeyEvent.KEYCODE_BACK: {
+//                exitDialog();
+//            return false;
+//        }
+//        }
+//        return super.onKeyDown(kCode, kEvent);
+//    }
 
     /*
      * ÍË³öµ¯³ö¿ò
